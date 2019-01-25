@@ -1,8 +1,6 @@
 % !TEX program = xelatex
 
 \documentclass{resume}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -13,64 +11,57 @@
   \phone{(+33) 7 51 07 30 64} \textperiodcentered\ 
   \linkedin[kjullien]{https://www.linkedin.com/in/kjullien}}
 
+\basicInfo{
+  \role{}{Développeur Node.js}}
+
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Web School Factory}, Paris, France}{2015 -- 2017}
-Master en management digital (spécialité Technologies Numériques), abandonné pour poursuivre carrière professionnelle.
+\datedsubsection{\textbf{Web School Factory}, Paris, France}{2015 -- 2017-05}
+Master en management digital (spécialité Technologies Numériques)
 \datedsubsection{\textbf{Ombrosa Multilingual School}, Lyon, France}{2012 -- 2015}
 Baccalauréat scientifique
 
-\section{\faUsers\ Experience}
-\datedsubsection{\textbf{Travelcar} Paris, France}{2017 -- 2019}
-\role{Concepteur Développeur}
+\section{\faBuilding\ Experience}
+\datedsubsection{\textbf{Travelcar} Paris, France}{2017-06 -- 2019-01}
+\role{CDI}{Concepteur Développeur}
 
 Chargé de la conception, développement, mise en place et maintenance d'un CMS pour environ 1 000 marques et sous-marques.
-Occasionnellement assigné à des taches d'expérimentation pour optimiser les processus internes. (Machine learning, systèmes homemade, etc.)
+Occasionnellement assigné à des taches d'expérimentation pour optimiser les processus internes.
 \begin{itemize}
   \item \textbf{Conception d'infrastructure}, Wordpress hébergé sur EC2, scale avec Elastic Beanstalk. \textit{[PHP/Docker/AWS]}
-  \item \textbf{Conception 4 thèmes} pour marques et sous marques Travelcar avec branding configurable en back-office. (Marques grises etc.) \textit{[PHP]}
-  \item Mise en place d'une \textbf{synchronisation des APIs Travelcar} pour créer et mettre à jour les pages des Wordpress automatiquement. \textit{[PHP/Node/Python]}
+  \item \textbf{Conception 4 thèmes} pour marques et sous marques avec branding configurable en back-office. \textit{[PHP]}
+  \item \textbf{Conception de services} pour synchronisation APIs internes vers Wordpress. \textit{[PHP]}
   \item \textbf{Maintenance et mise en place nouvelles fonctionnalités sur les Wordpress}. \textit{[PHP]}
-  \item \textbf{Expériences avec machine learning} (réduire outsourcing de vérifications d'images, nouvelles formes \newline d'authentification, etc.). \textit{[Python]}
-  \item \textbf{Divers scripts et CLIs} pour faciliter l'UX de développement. \textit{[Typescript]}
+  \item \textbf{Expériences avec machine learning}, réduire outsourcing de vérifications d'images, nouvelles formes \newline d'authentification, etc. \textit{[Python]}
+  \item \textbf{Divers scripts et CLIs} pour améliorer l'experience de développement. \textit{[Typescript]}
 \end{itemize}
 
+
+\section{\faGithub\ Loisirs}
 \datedsubsection{\textbf{Open Source}}{2012 -- 2019}
-\role{Github}{}
-J'affiche fièrement mes contributions open source et ne jure que par le "free/libre software".
+\role{temps libre}{GitHub}
 \begin{itemize}
-  \item \textbf{fyle} - utilitaires de processing d'assets web (optimisation, compression, etc.) \textit{[Docker/Shell]}
-  \item \textbf{Lardons} - boilerplate fullstack Strapi, Mongo, Nuxt et Docker \textit{[docker-compose/Vue.js/Mongo/Node]}
-  \item \textbf{clize} - utilitaire node pour executer des exports directement depuis la console \textit{[Typescript]}
-  \item \textbf{nodend.com} - blog personnel d'articles/tutos divers sur Linux, Node, Bash etc. \textit{[Go]}
-  \item \textbf{actions} - actions pour Github Actions \textit{[Docker/Bash]}
-  \item \textbf{ngrok-service} - script de setup interactif ngrok2 et system.d \textit{[Bash]}
-  \item \textbf{Micro-Wordpress} - micro-services PHP exposés automatiquement via l'API REST Wordpress \textit{[PHP]}
-  \item \textbf{CV} - ce cv est aussi disponible sur mon Github \textit{[LaTeX]}
+  \item \textbf{fyle} - utilitaires conteneurisés d'optimisation, compression et plus pour médias web. \textit{[Docker/Shell]}
+  \item \textbf{Lardons} - infrastructure conteneurisée fullstack avec backend Strapi (WordPress des APIs), frontend Vue.js. \textit{[docker-compose/Vue.js/Mongo/Node]}
+  \item \textbf{clize} - utilitaire Node.js pour tester des methodes Javascript directement depuis sa console. \textit{[Typescript]}
+  \item \textbf{nodend.com} - blog de Technologies sur divers sujets, Linux, Node, Bash etc. \textit{[Go]}
+  \item \textbf{actions} - actions conteneurisées pour Github Actions. \textit{[Docker/Bash]}
+  \item \textbf{ngrok-service} - utilitaire d'installation interactif Ngrok2 via System.d. \textit{[Bash]}
+  \item \textbf{Micro-Wordpress} - framework de micro-services, un fichier php = un service, exposé automatiquement via l'API REST Wordpress. \textit{[PHP]}
+  \item \textbf{CV} - ce cv est aussi disponible sur mon GitHub. \textit{[LaTeX]}
 \end{itemize}
-
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
 
 \section{\faCogs\ Talents}
 \begin{itemize}[parsep=0.5ex]
-  \item \textbf{Languages}: Node == Typescript == Javascript == ES6 > PHP == Python > Go
-  \item \textbf{Platformes}: Linux == macOs > Windows
-  \item \textbf{Développement}: Web \textit{[Typescript/PHP]} == Serveur \textit{[Typescript/Python/PHP/Go]} == OPS \textit{[Docker/AWS]}
+  \item \textbf{Languages}: Node \textbf{=} Typescript \textbf{=} Javascript \textbf{=} ES6 \textbf{>} PHP \textbf{=} Python \textbf{>} Go
+  \item \textbf{Platformes}: Linux \textbf{=} macOs \textbf{>} Windows
+  \item \textbf{Développement}: Serveur \textbf{=} OPS \textbf{>} Client
 \end{itemize}
 
 \section{\faInfo\ Autre}
 \begin{itemize}[parsep=0.5ex]
   \item \textbf{Blog}: https://nodend.com
   \item \textbf{GitHub}: https://github.com/jukefr
-  \item \textbf{Languages}: English (native) == Français (natif) > Español (poquito)
+  \item \textbf{Languages}: English (C2) = Français (C2) > Español (A2)
 \end{itemize}
 
-%% Reference
-%\newpage
-%\bibliographystyle{IEEETran}
-%\bibliography{mycite}
 \end{document}
